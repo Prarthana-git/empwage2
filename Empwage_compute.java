@@ -1,5 +1,5 @@
 
-public class Empwage
+public class Empwage_compute
 {
      public final static int IS_PART_TIME = 1;
      public final static int IS_FULL_TIME = 2;
@@ -10,7 +10,7 @@ public class Empwage
        int Max_Hrs_In_Month;
 
 
-public  Empwage(String company,int Emp_Rate_Per_Hr, int Num_Of_Working_Days,int Max_Hrs_In_Month)
+public  Empwage_compute(String company,int Emp_Rate_Per_Hr, int Num_Of_Working_Days,int Max_Hrs_In_Month)
 
 { 
       this.company=company;
@@ -50,8 +50,8 @@ int totalEmpWage=0;
 
    public static void main(String args[])
    {
-    Empwage DM=new Empwage("Dmart",14,15,66);
-   Empwage BG=new Empwage("BigBasket",12,14,55);
+    Empwage_compute DM=new Empwage_compute("Dmart",14,15,66);
+    Empwage_compute BG=new Empwage_compute("BigBasket",12,14,55);
     DM.empcal();
    BG.empcal();
     }
