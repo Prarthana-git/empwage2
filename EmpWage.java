@@ -1,5 +1,4 @@
 package empWageBuilder;
-
 	interface IComputeEmpWage {
 	public void addCompanyEmpWage(String company, int empRatePerHour, int NumOfWorkingDays, int maxHoursPerMOnth);
 	public void computeEmpWage();
@@ -28,7 +27,7 @@ public class EmpWage {
 			return "Total Emp Wage for company: "+company+" is: "+totalEmpWage;
 		}
 		public static void main(String[] args) {
-			IComputeEmpWage empWageBuilder = new EmpWageBuilderArray();
+			IComputeEmpWage empWageBuilder = new EmpWageBuilder();
 			empWageBuilder.addCompanyEmpWage("Dmart", 20, 2, 10);
 			empWageBuilder.addCompanyEmpWage("Reliance", 10, 4, 20);
 			empWageBuilder.computeEmpWage();
