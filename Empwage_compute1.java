@@ -1,5 +1,5 @@
 
-public class Empwage_compute
+public class Empwage_compute1
 {
      public final static int IS_PART_TIME = 1;
      public final static int IS_FULL_TIME = 2;
@@ -43,7 +43,7 @@ int totalEmpWage=0;
 
    public static void main(String args[])
    {
-        Empwage_compute emp=new Empwage_compute();
+        Empwage_compute1 emp=new Empwage_compute1();
         int[] wages=new int[3];
         
         wages[0]=emp.evaluateEmpWage("Honda",40,20,100);
